@@ -11,7 +11,8 @@ export default class Header extends Component {
 
 
   render () {
-    return (<section className="filter">
+    return (<section id="filter">
+    <div className ='inside'>
         <h4> Filter </h4>
         <select name="neighborhood" className="filters neighborhood">
             <option>Evanston</option>
@@ -55,6 +56,7 @@ export default class Header extends Component {
     <label for="extras">
     <span>Finished Basement</span> 
     <input name="extras" value="finished-basement" type="checkbox" /></label>
+    </div>
     </div>
         </section>)
   }
