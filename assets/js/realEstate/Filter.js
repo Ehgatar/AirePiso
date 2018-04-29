@@ -30,11 +30,14 @@ export default class Header extends Component {
         <input type="text" name="max-price" className="max-price" />
     </div>
     <div className="filters floor-space">
-        <span className="title">Price</span>
+        <span className="title">Floor Space</span>
         <input type="text" name="min-floor-space" className="min-floor-space" />
         <input type="text" name="max-floor-space" className="max-floor-space" />
     </div>
     <div className="filters extras">
+    <span className="title">
+    Extras
+    </span>
     <label for="extras">
     <span>Elevators</span> 
     <input name="extras" value="elevator" type="checkbox" /></label>

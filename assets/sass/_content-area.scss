@@ -25,11 +25,13 @@
         width:100%;
     }
 
+
     .filters{
         .title{
             font-size:0.9rem;
             display: block;
             margin-bottom: 1rem;
+            color: pink;
         }
     }
         input[type="text"]{
@@ -41,7 +43,16 @@
             margin-right: 2.5%;
             margin-bottom: 1rem;
     }
-    
-
+   // put and and bc filters has a class of extras 
+&.extras {
+    label{
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        input[type="checkbox"]{
+            float:right;
+        }
+    }
+}
 
 }
