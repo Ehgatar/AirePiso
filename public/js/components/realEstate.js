@@ -411,10 +411,51 @@ var Header = function (_Component) {
                 { value: 'price-dsc' },
                 'Lowest Price'
               )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'view' },
+              _react2.default.createElement('i', { className: 'fa fa-th-list', 'aria-hhidden': 'true' }),
+              _react2.default.createElement('i', { className: 'fa fa-th', 'aria-hidden': 'true' })
             )
           )
         ),
-        _react2.default.createElement('section', { className: 'listings-results' }),
+        _react2.default.createElement(
+          'section',
+          { className: 'listings-results' },
+          _react2.default.createElement(
+            'div',
+            { className: 'listing' },
+            _react2.default.createElement(
+              'div',
+              { className: 'listing-img' },
+              _react2.default.createElement(
+                'span',
+                { className: 'Address' },
+                ' Address'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'details' },
+                _react2.default.createElement('div', { className: 'user-img' }),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'user-details' },
+                  _react2.default.createElement(
+                    'span',
+                    { className: 'user-name' },
+                    'Don Tinimbang'
+                  ),
+                  _react2.default.createElement(
+                    'span',
+                    { className: 'post-date' },
+                    '05/19/2018'
+                  )
+                )
+              )
+            )
+          )
+        ),
         _react2.default.createElement('section', { className: 'pagination' })
       );
     }
