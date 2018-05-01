@@ -381,7 +381,7 @@ var Header = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         'section',
-        { className: 'Listings' },
+        { id: 'Listings' },
         _react2.default.createElement(
           'section',
           { className: 'search-area' },
@@ -393,7 +393,7 @@ var Header = function (_Component) {
           _react2.default.createElement(
             'div',
             null,
-            '390 results found'
+            '400 results found'
           ),
           _react2.default.createElement(
             'div',
@@ -451,12 +451,87 @@ var Header = function (_Component) {
                     { className: 'post-date' },
                     '05/19/2018'
                   )
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'listing-details' },
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'floor-space' },
+                    _react2.default.createElement(
+                      'span',
+                      null,
+                      '1000 ft'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'bedrooms' },
+                    _react2.default.createElement('i', { className: 'fas fa-bed' }),
+                    _react2.default.createElement(
+                      'span',
+                      null,
+                      '10 bedrooms'
+                    )
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'bottom-info' },
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  ' $1000/ month'
+                ),
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  _react2.default.createElement('i', { 'class': 'fas fa-location-arrow' }),
+                  'Evanston, IL'
                 )
               )
             )
           )
         ),
-        _react2.default.createElement('section', { className: 'pagination' })
+        _react2.default.createElement(
+          'section',
+          { className: 'pagination' },
+          _react2.default.createElement(
+            'ul',
+            { className: 'pagination-nums' },
+            _react2.default.createElement(
+              'li',
+              null,
+              'Prev'
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              '1'
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              '2'
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              '3'
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              '4'
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              '5'
+            )
+          )
+        )
       );
     }
   }]);
