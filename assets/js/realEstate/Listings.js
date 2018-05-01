@@ -52,7 +52,7 @@ export default class Header extends Component {
               <span>1000 ft</span>
               </div>
               <div className="bedrooms">
-              <i className="fas fa-bed"></i>
+              <i className="fas fa-bed" aria-hidden="true"></i>
               <span>10 bedrooms</span>
               </div>
             </div>
@@ -60,7 +60,7 @@ export default class Header extends Component {
             <div className="bottom-info">
             <span> $1000/ month</span>
             <span>
-              <i class="fas fa-location-arrow"></i>
+              <i className="fas fa-location-arrow" aria-hidden="true"></i>
              Evanston, IL
              </span>
             </div>

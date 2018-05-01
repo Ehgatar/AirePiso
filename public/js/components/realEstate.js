@@ -467,7 +467,7 @@ var Header = function (_Component) {
                   _react2.default.createElement(
                     'div',
                     { className: 'bedrooms' },
-                    _react2.default.createElement('i', { className: 'fas fa-bed' }),
+                    _react2.default.createElement('i', { className: 'fas fa-bed', 'aria-hidden': 'true' }),
                     _react2.default.createElement(
                       'span',
                       null,
@@ -487,7 +487,7 @@ var Header = function (_Component) {
                 _react2.default.createElement(
                   'span',
                   null,
-                  _react2.default.createElement('i', { 'class': 'fas fa-location-arrow' }),
+                  _react2.default.createElement('i', { className: 'fas fa-location-arrow', 'aria-hidden': 'true' }),
                   'Evanston, IL'
                 )
               )
