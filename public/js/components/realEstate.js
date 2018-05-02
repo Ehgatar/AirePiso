@@ -119,115 +119,124 @@ var Header = function (_Component) {
         value: function render() {
             return _react2.default.createElement(
                 'section',
-                { className: 'filter' },
-                _react2.default.createElement(
-                    'h4',
-                    null,
-                    ' Filter '
-                ),
-                _react2.default.createElement(
-                    'select',
-                    { name: 'neighborhood', className: 'filters neighborhood' },
-                    _react2.default.createElement(
-                        'option',
-                        null,
-                        'Evanston'
-                    )
-                ),
-                _react2.default.createElement(
-                    'select',
-                    { name: 'housetype', className: 'filters housetype' },
-                    _react2.default.createElement(
-                        'option',
-                        null,
-                        'Ranch'
-                    )
-                ),
-                _react2.default.createElement(
-                    'select',
-                    { name: 'bedrooms', className: 'filters bedrooms' },
-                    _react2.default.createElement(
-                        'option',
-                        null,
-                        '2 br'
-                    )
-                ),
+                { id: 'filter' },
                 _react2.default.createElement(
                     'div',
-                    { className: 'filters price' },
+                    { className: 'inside' },
                     _react2.default.createElement(
-                        'span',
-                        { className: 'title' },
-                        'Price'
+                        'h4',
+                        null,
+                        ' Filter '
                     ),
-                    _react2.default.createElement('input', { type: 'text', name: 'min-price', className: 'min-price' }),
-                    _react2.default.createElement('input', { type: 'text', name: 'max-price', className: 'max-price' })
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'filters floor-space' },
                     _react2.default.createElement(
-                        'span',
-                        { className: 'title' },
-                        'Price'
+                        'select',
+                        { name: 'neighborhood', className: 'filters neighborhood' },
+                        _react2.default.createElement(
+                            'option',
+                            null,
+                            'Evanston'
+                        )
                     ),
-                    _react2.default.createElement('input', { type: 'text', name: 'min-floor-space', className: 'min-floor-space' }),
-                    _react2.default.createElement('input', { type: 'text', name: 'max-floor-space', className: 'max-floor-space' })
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'filters extras' },
                     _react2.default.createElement(
-                        'label',
-                        { 'for': 'extras' },
+                        'select',
+                        { name: 'housetype', className: 'filters housetype' },
+                        _react2.default.createElement(
+                            'option',
+                            null,
+                            'Ranch'
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'select',
+                        { name: 'bedrooms', className: 'filters bedrooms' },
+                        _react2.default.createElement(
+                            'option',
+                            null,
+                            '2 br'
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'filters price' },
                         _react2.default.createElement(
                             'span',
-                            null,
-                            'Elevators'
+                            { className: 'title' },
+                            'Price'
                         ),
-                        _react2.default.createElement('input', { name: 'extras', value: 'elevator', type: 'checkbox' })
-                    )
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'filters extras' },
+                        _react2.default.createElement('input', { type: 'text', name: 'min-price', className: 'min-price' }),
+                        _react2.default.createElement('input', { type: 'text', name: 'max-price', className: 'max-price' })
+                    ),
                     _react2.default.createElement(
-                        'label',
-                        { 'for': 'extras' },
+                        'div',
+                        { className: 'filters floor-space' },
                         _react2.default.createElement(
                             'span',
-                            null,
-                            'Swimming pool'
+                            { className: 'title' },
+                            'Floor Space'
                         ),
-                        _react2.default.createElement('input', { name: 'extras', value: 'swimming-pool', type: 'checkbox' })
-                    )
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'filters extras' },
+                        _react2.default.createElement('input', { type: 'text', name: 'min-floor-space', className: 'min-floor-space' }),
+                        _react2.default.createElement('input', { type: 'text', name: 'max-floor-space', className: 'max-floor-space' })
+                    ),
                     _react2.default.createElement(
-                        'label',
-                        { 'for': 'extras' },
+                        'div',
+                        { className: 'filters extras' },
                         _react2.default.createElement(
                             'span',
-                            null,
-                            'Gyms'
+                            { className: 'title' },
+                            'Extras'
                         ),
-                        _react2.default.createElement('input', { name: 'extras', value: 'gym', type: 'checkbox' })
-                    )
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'filters extras' },
-                    _react2.default.createElement(
-                        'label',
-                        { 'for': 'extras' },
                         _react2.default.createElement(
-                            'span',
-                            null,
-                            'Finished Basement'
-                        ),
-                        _react2.default.createElement('input', { name: 'extras', value: 'finished-basement', type: 'checkbox' })
+                            'label',
+                            { 'for': 'extras' },
+                            _react2.default.createElement(
+                                'span',
+                                null,
+                                'Elevators'
+                            ),
+                            _react2.default.createElement('input', { name: 'extras', value: 'elevator', type: 'checkbox' })
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'filters extras' },
+                        _react2.default.createElement(
+                            'label',
+                            { 'for': 'extras' },
+                            _react2.default.createElement(
+                                'span',
+                                null,
+                                'Swimming pool'
+                            ),
+                            _react2.default.createElement('input', { name: 'extras', value: 'swimming-pool', type: 'checkbox' })
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'filters extras' },
+                        _react2.default.createElement(
+                            'label',
+                            { 'for': 'extras' },
+                            _react2.default.createElement(
+                                'span',
+                                null,
+                                'Gyms'
+                            ),
+                            _react2.default.createElement('input', { name: 'extras', value: 'gym', type: 'checkbox' })
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'filters extras' },
+                        _react2.default.createElement(
+                            'label',
+                            { 'for': 'extras' },
+                            _react2.default.createElement(
+                                'span',
+                                null,
+                                'Finished Basement'
+                            ),
+                            _react2.default.createElement('input', { name: 'extras', value: 'finished-basement', type: 'checkbox' })
+                        )
                     )
                 )
             );
@@ -372,8 +381,157 @@ var Header = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         'section',
-        { className: 'Listings' },
-        'Listings'
+        { id: 'Listings' },
+        _react2.default.createElement(
+          'section',
+          { className: 'search-area' },
+          _react2.default.createElement('input', { type: 'text', name: 'search' })
+        ),
+        _react2.default.createElement(
+          'section',
+          { className: 'sortby-area' },
+          _react2.default.createElement(
+            'div',
+            null,
+            '400 results found'
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'sort-options' },
+            _react2.default.createElement(
+              'select',
+              { name: 'sortby', className: 'sortby' },
+              _react2.default.createElement(
+                'option',
+                { value: 'price-asc' },
+                'Highest Price'
+              ),
+              _react2.default.createElement(
+                'option',
+                { value: 'price-dsc' },
+                'Lowest Price'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'view' },
+              _react2.default.createElement('i', { className: 'fa fa-th-list', 'aria-hhidden': 'true' }),
+              _react2.default.createElement('i', { className: 'fa fa-th', 'aria-hidden': 'true' })
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'section',
+          { className: 'listings-results' },
+          _react2.default.createElement(
+            'div',
+            { className: 'listing' },
+            _react2.default.createElement(
+              'div',
+              { className: 'listing-img' },
+              _react2.default.createElement(
+                'span',
+                { className: 'Address' },
+                ' Address'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'details' },
+                _react2.default.createElement('div', { className: 'user-img' }),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'user-details' },
+                  _react2.default.createElement(
+                    'span',
+                    { className: 'user-name' },
+                    'Don Tinimbang'
+                  ),
+                  _react2.default.createElement(
+                    'span',
+                    { className: 'post-date' },
+                    '05/19/2018'
+                  )
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'listing-details' },
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'floor-space' },
+                    _react2.default.createElement(
+                      'span',
+                      null,
+                      '1000 ft'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'bedrooms' },
+                    _react2.default.createElement('i', { className: 'fas fa-bed', 'aria-hidden': 'true' }),
+                    _react2.default.createElement(
+                      'span',
+                      null,
+                      '10 bedrooms'
+                    )
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'bottom-info' },
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  ' $1000/ month'
+                ),
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  _react2.default.createElement('i', { className: 'fas fa-location-arrow', 'aria-hidden': 'true' }),
+                  'Evanston, IL'
+                )
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'section',
+          { className: 'pagination' },
+          _react2.default.createElement(
+            'ul',
+            { className: 'pagination-nums' },
+            _react2.default.createElement(
+              'li',
+              null,
+              'Prev'
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              '1'
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              '2'
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              '3'
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              '4'
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              '5'
+            )
+          )
+        )
       );
     }
   }]);
