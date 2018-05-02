@@ -371,7 +371,7 @@ var Header = function (_Component) {
     var _this = _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this));
 
     _this.state = {
-      name: 'Joe'
+      name: 'Don'
     };
     return _this;
   }
@@ -385,7 +385,7 @@ var Header = function (_Component) {
         _react2.default.createElement(
           'section',
           { className: 'search-area' },
-          _react2.default.createElement('input', { type: 'text', name: 'search' })
+          _react2.default.createElement('input', { type: 'text', name: 'search', placeholder: 'search' })
         ),
         _react2.default.createElement(
           'section',
