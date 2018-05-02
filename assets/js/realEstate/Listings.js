@@ -5,15 +5,16 @@ export default class Header extends Component {
   constructor () {
     super()
     this.state = {
-      name: 'Joe'
+      name: 'Don'
     }
   }
 
 
   render () {
     return (<section id="Listings">
+    {/* SEARCH BAR */}
         <section className="search-area">
-          <input type="text" name="search" />
+          <input type="text" name="search" placeholder="search" />
         </section>
 
         <section className="sortby-area">
